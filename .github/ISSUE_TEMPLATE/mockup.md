@@ -1,0 +1,46 @@
+---
+name: Mockup Issue
+about: Create a new mockup issue
+labels: "Figma"
+---
+
+### Description 📝
+
+En tant qu'utilisateur, je souhaite pouvoir...
+
+### Dépendances ⚠️
+- #...
+
+### Critères d'acceptation ✅
+
+**Variables :**
+- [ ] ...
+
+**Modes :**
+- [ ] ...
+
+**Styles :**
+- [ ] ...
+
+**Propriétés :**
+- [ ] ...
+
+**Interraction :**
+- [ ] ...
+
+### Technique ⚙️
+
+- [ ] [Ajouter/Modifier/Supprimer] ...
+- [ ] Utiliser la librairie : [...](url)
+- [ ] ...
+
+### Workflow 🔄
+
+- [ ] L'utilisateur clique sur...
+- [ ] L'utilisateur est redirigé vers...
+- [ ] L'utilisateur reçoit une alerte lui indiquant que...
+- [ ] ...
+
+---
+
+[Page Figma](url)
