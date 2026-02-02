@@ -1,6 +1,6 @@
 ---
-name: Issue standard
-about: Créer une nouvelle issue selon le modèle standard
+name: Dev Issue
+about: Créer une nouvelle issue selon le modèle de développement
 ---
 
 ### Description 📝
