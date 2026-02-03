@@ -55,6 +55,7 @@ async function syncRepo(repo) {
         await octokit.rest.issues.updateMilestone({
           owner: org,
           repo,
+          milestone_number: found.number,
           title: ms.title,
           description: ms.description,
           due_on: ms.due_on,
