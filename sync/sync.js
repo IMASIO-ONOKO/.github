@@ -4,34 +4,12 @@ import fs from "fs";
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 const org = "IMASIO-ONOKO";
 
-const labels = JSON.parse(fs.readFileSync("./sync/labels.json"));
 const milestones = JSON.parse(fs.readFileSync("./sync/milestones.json"));
 
 const targetRepo = process.argv[2];
 
 async function syncRepo(repo) {
   console.log(`🔄 Synchronisation de ${repo}...`);
-
-  for (const label of labels) {
-    try {
-      await octokit.rest.issues.getLabel({
-        owner: org,
-        repo,
-        name: label.name,
-      });
-      await octokit.rest.issues.updateLabel({
-        owner: org,
-        repo,
-        name: label.name,
-        color: label.color,
-        description: label.description,
-      });
-      console.log(`✅ Label mis à jour: ${label.name}`);
-    } catch {
-      await octokit.rest.issues.createLabel({ owner: org, repo, ...label });
-      console.log(`➕ Label créé: ${label.name}`);
-    }
-  }
 
   for (const ms of milestones) {
     try {
