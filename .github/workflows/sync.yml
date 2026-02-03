@@ -1,0 +1,29 @@
+name: Sync Labels & Milestones
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_repo:
+        description: "Nom du repo à synchroniser (laisser vide pour tous)"
+        required: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install octokit
+      - name: Run sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          if [ -z "${{ github.event.inputs.target_repo }}" ]; then
+            node ./sync/sync.js
+          else
+            node ./sync/sync.js "${{ github.event.inputs.target_repo }}"
+          fi
