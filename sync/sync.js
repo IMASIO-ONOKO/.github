@@ -10,6 +10,8 @@ const milestones = JSON.parse(fs.readFileSync("./sync/milestones.json"));
 const targetRepo = process.argv[2];
 
 async function syncRepo(repo) {
+  console.log(`🔄 Synchronisation de ${repo}...`);
+
   for (const label of labels) {
     try {
       await octokit.rest.issues.getLabel({
@@ -50,7 +52,14 @@ async function syncRepo(repo) {
         });
         console.log(`➕ Milestone créée: ${ms.title}`);
       } else {
-        console.log(`✅ Milestone existante: ${ms.title}`);
+        await octokit.rest.issues.updateMilestone({
+          owner: org,
+          repo,
+          title: ms.title,
+          description: ms.description,
+          due_on: ms.due_on,
+        });
+        console.log(`✅ Milestone mise à jour: ${ms.title}`);
       }
     } catch (err) {
       console.error(
