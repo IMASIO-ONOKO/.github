@@ -1,4 +1,4 @@
-name: Sync Labels & Milestones
+name: Sync Milestones
 
 on:
   workflow_dispatch:
