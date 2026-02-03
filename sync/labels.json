@@ -1,0 +1,22 @@
+[
+  { "color": "a2edfc", "name": "Electron", "description": "" },
+  { "color": "b81041", "name": "Raspbian Pi", "description": "" },
+  { "color": "006b75", "name": "API", "description": "" },
+  { "color": "006b75", "name": "CI/CD", "description": "" },
+  { "color": "39acdd", "name": "CSS", "description": "" },
+  { "color": "2599ee", "name": "Docker", "description": "" },
+  { "color": "006b75", "name": "Documentation", "description": "" },
+  { "color": "080808", "name": "GitHub", "description": "" },
+  { "color": "e2089b", "name": "GraphQL", "description": "" },
+  { "color": "eb6208", "name": "HTML", "description": "" },
+  { "color": "f7e025", "name": "JavaScript", "description": "" },
+  { "color": "006b75", "name": "Mail", "description": "" },
+  { "color": "0877e9", "name": "Material UI", "description": "" },
+  { "color": "08668e", "name": "SQL", "description": "" },
+  { "color": "84bf09", "name": "Node.js", "description": "" },
+  { "color": "006b75", "name": "Package", "description": "" },
+  { "color": "08ddff", "name": "React JS", "description": "" },
+  { "color": "cf6c9c", "name": "Sass", "description": "" },
+  { "color": "b60205", "name": "Sécurité", "description": "" },
+  { "color": "377cc8", "name": "TypeScript", "description": "" }
+]

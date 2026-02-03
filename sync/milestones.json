@@ -1,0 +1,37 @@
+[
+  {
+    "title": "1. Cadrage & spécifications",
+    "description": "Définir la vision, les besoins et les contraintes du produit et de l’organisation.",
+    "due_on": "2026-12-25-T23:59:59Z"
+  },
+  {
+    "title": "2. MVP technique",
+    "description": "Livrer une première version fonctionnelle pour tests internes.",
+    "due_on": "2026-12-26-T23:59:59Z"
+  },
+  {
+    "title": "3. Prototype client / pilote",
+    "description": "Valider le produit auprès de clients tests.",
+    "due_on": "2026-12-27-T23:59:59Z"
+  },
+  {
+    "title": "4. Structure & financement",
+    "description": "Donner une existence légale et financière au projet.",
+    "due_on": "2026-12-28-T23:59:59Z"
+  },
+  {
+    "title": "5. Design system & UI/UX",
+    "description": "Uniformiser l’expérience et préparer le produit final.",
+    "due_on": "2026-12-29-T23:59:59Z"
+  },
+  {
+    "title": "6. Version beta",
+    "description": "Livraison complète et testée, prête pour industrialisation.",
+    "due_on": "2026-12-30-T23:59:59Z"
+  },
+  {
+    "title": "7. Lancement officiel",
+    "description": "Mise sur le marché et déploiement industriel.",
+    "due_on": "2026-12-31-T23:59:59Z"
+  }
+]
